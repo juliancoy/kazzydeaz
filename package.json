@@ -1,10 +1,22 @@
 {
+  "type": "module",
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
-    "deploy:dry-run": "wrangler deploy --dry-run"
+    "deploy:dry-run": "wrangler deploy --dry-run",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test pidp/test/*.mjs",
+    "db:migrate:local": "wrangler d1 migrations apply faith-and-eve-pidp --local",
+    "db:migrate:remote": "wrangler d1 migrations apply faith-and-eve-pidp --remote"
+  },
+  "dependencies": {
+    "hono": "^4.8.0",
+    "qrcode": "^1.5.4"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260811.1",
+    "@types/qrcode": "^1.5.6",
+    "typescript": "^5.8.3",
     "wrangler": "^4.123.0"
   }
 }

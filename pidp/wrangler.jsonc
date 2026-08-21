@@ -1,0 +1,40 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "pidp-serverless",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-06-03",
+  "workers_dev": true,
+  "observability": {
+    "enabled": true
+  },
+  "vars": {
+    "APP_NAME": "PIdP",
+    "ENV": "dev",
+    "ACCESS_TOKEN_EXPIRE_MINUTES": "525600",
+    "ALLOWED_ORIGINS": "",
+    "ADMIN_EMAILS": "",
+    "ADMIN_USER_IDS": "",
+    "PUBLIC_R2_BASE_URL": "",
+    "PUBLIC_BASE_URL": "https://id.codecollective.us",
+    "FRONTEND_REDIRECT_URL": "",
+    "NATIVE_REDIRECT_SCHEMES": "org.arkavo.portal,codecollective",
+    "GOOGLE_REDIRECT_URI": "",
+    "GOOGLE_CALENDAR_REDIRECT_URI": "",
+    "MICROSOFT_REDIRECT_URI": "",
+    "MICROSOFT_CALENDAR_REDIRECT_URI": "",
+    "GITHUB_REDIRECT_URI": ""
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "pidp",
+      "database_id": "582fc740-4275-482a-bec0-a161a0aa6623"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "AVATARS",
+      "bucket_name": "pidp-avatars"
+    }
+  ]
+}

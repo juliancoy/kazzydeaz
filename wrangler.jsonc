@@ -1,10 +1,49 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "faith-and-eve",
-  "compatibility_date": "2026-08-15",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-20",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "observability": {
+    "enabled": true
+  },
   "assets": {
+    "binding": "ASSETS",
     "directory": "./public",
     "html_handling": "auto-trailing-slash",
     "not_found_handling": "404-page"
-  }
+  },
+  "vars": {
+    "APP_NAME": "People's Identity Platform",
+    "ENV": "dev",
+    "ACCESS_TOKEN_EXPIRE_MINUTES": "525600",
+    "ALLOWED_ORIGINS": "",
+    "ADMIN_EMAILS": "",
+    "ADMIN_USER_IDS": "",
+    "PUBLIC_R2_BASE_URL": "",
+    "PUBLIC_BASE_URL": "",
+    "FRONTEND_REDIRECT_URL": "",
+    "NATIVE_REDIRECT_SCHEMES": "org.arkavo.portal,codecollective",
+    "GOOGLE_REDIRECT_URI": "",
+    "GOOGLE_CALENDAR_REDIRECT_URI": "",
+    "MICROSOFT_REDIRECT_URI": "",
+    "MICROSOFT_CALENDAR_REDIRECT_URI": "",
+    "GITHUB_REDIRECT_URI": "",
+    "FINANCIAL_WEBHOOK_AUDIENCE": "financial-systems",
+    "FINANCIAL_INTEGRATION_MODE": "ready"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "faith-and-eve-pidp",
+      "database_id": "a981ce8c-dbf1-42e3-a11a-8e255a2d8243"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "AVATARS",
+      "bucket_name": "faith-and-eve-pidp-avatars"
+    }
+  ]
 }
