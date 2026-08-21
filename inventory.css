@@ -1,0 +1,54 @@
+.inventory-page{background:var(--paper)}
+.inventory-nav{height:94px;padding:0 4vw;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;border-bottom:1px solid var(--line)}
+.inventory-nav>p{font:9px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.15em}
+.storefront-link{justify-self:end;text-decoration:none;font:9px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.08em}
+.storefront-link span{margin-left:22px}
+.inventory-hero{min-height:610px;padding:105px 7vw 80px;background:var(--cream);display:grid;grid-template-columns:1fr 300px;align-items:end;gap:70px}
+.inventory-hero h1{font:clamp(62px,8.4vw,126px)/.86 Italiana,serif;letter-spacing:-.045em;margin:0;max-width:1050px}
+.inventory-hero h1 em,.checklist h2 em{font-weight:400;color:var(--rust)}
+.hero-note{border-top:1px solid var(--ink);padding-top:20px}
+.hero-count{font:74px/1 Italiana,serif}
+.hero-note p{font-size:12px;line-height:1.75;margin:22px 0 0}
+.buying-note{padding:55px 7vw;display:grid;grid-template-columns:170px minmax(300px,760px) 1fr;gap:50px;align-items:start;background:var(--green);color:#f6f1e7}
+.buying-note>p:nth-child(2){font:24px/1.45 Italiana,serif;margin:0}
+.buying-note>p strong{font-weight:400;color:#d8b199}
+.buying-note>div{justify-self:end;text-align:right;font:9px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.1em}
+.buying-note>div span,.buying-note>div b{display:block}.buying-note>div b{font-size:17px;margin-top:7px;font-weight:400}
+.assortment{padding:120px 4vw;background:var(--paper)}
+.assortment-heading{display:grid;grid-template-columns:1fr 340px;gap:70px;align-items:end;margin:0 3vw 65px}
+.assortment-heading h2{font:clamp(48px,6vw,86px)/.93 Italiana,serif;letter-spacing:-.035em;margin:0}.assortment-heading h2 em{font-weight:400;color:var(--rust)}
+.assortment-heading>p{font-size:12px;line-height:1.8;margin:0 0 8px}
+.department-tabs{display:flex;gap:26px;border-bottom:1px solid var(--ink);margin-bottom:0}
+.department-tabs button{border:0;background:none;padding:0 0 15px;cursor:pointer;font:9px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.08em;opacity:.45}.department-tabs button.active{opacity:1;border-bottom:2px solid var(--rust)}
+.assortment-grid{display:grid;grid-template-columns:repeat(4,1fr);border-left:1px solid var(--line)}
+.assortment-card{min-height:365px;padding:28px;display:flex;flex-direction:column;border-right:1px solid var(--line);border-bottom:1px solid var(--line);position:relative;background:var(--paper);transition:.25s}
+.assortment-card:hover{background:var(--cream)}.assortment-card.accent{background:var(--green);color:#f6f1e7}.assortment-card.accent:hover{background:#294332}
+.assortment-card .piece-number{font:9px 'DM Mono',monospace;opacity:.45}
+.piece-image{width:100%;aspect-ratio:16/10;object-fit:cover;border:1px solid var(--line);margin:30px 0 22px;background:#fff}
+.assortment-card h3{font:29px Italiana,serif;margin:0}.assortment-card .piece-note{font-size:11px;line-height:1.65;margin:10px 0 25px;opacity:.72}
+.price-row{display:flex;justify-content:space-between;gap:20px;align-items:baseline;padding:12px 0 15px;border-top:1px solid currentColor}.price-row span{font:8px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.08em;opacity:.55}.price-row strong{font:16px Italiana,serif;font-weight:400}
+.source-pair{margin-top:auto;border-top:1px solid currentColor;padding-top:15px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:end}.source-pair span{font:8px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.08em;opacity:.55}.source-pair strong{display:block;font:16px Italiana,serif;margin-top:5px}.source-pair a{text-decoration:none;font-size:20px}
+.inventory-other{padding:0 4vw 120px;background:var(--paper)}
+.inventory-other .assortment-heading{margin-top:65px}
+.directory{padding:110px 4vw 130px}
+.directory-top{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:50px}
+.directory-top h2{font:clamp(48px,6vw,84px)/1 Italiana,serif;margin:0}
+.source-search{width:min(360px,100%);border-bottom:1px solid var(--ink);display:flex;align-items:center;gap:12px;padding:10px 0}
+.source-search input{width:100%;border:0;background:none;outline:none;font:10px 'DM Mono',monospace}
+.filter-bar{display:flex;align-items:center;gap:25px;border-bottom:1px solid var(--ink);overflow:auto}
+.filter-bar button{border:0;background:none;padding:0 0 16px;white-space:nowrap;cursor:pointer;font:9px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.08em;opacity:.45}
+.filter-bar button.active{opacity:1;border-bottom:2px solid var(--rust)}
+.filter-bar span{margin-left:auto;padding-bottom:16px;white-space:nowrap;font:9px 'DM Mono',monospace;text-transform:uppercase}
+.vendor-row{display:grid;grid-template-columns:70px minmax(170px,1fr) minmax(280px,2fr) minmax(175px,.85fr) 44px;gap:28px;align-items:center;padding:32px 12px;border-bottom:1px solid var(--line);transition:background .2s}
+.vendor-row:hover{background:var(--cream)}
+.vendor-number{font:9px 'DM Mono',monospace;opacity:.45;align-self:start;padding-top:7px}
+.vendor-name h3{font:29px Italiana,serif;margin:0 0 8px}.vendor-name p{font:9px 'DM Mono',monospace;text-transform:uppercase;color:var(--rust);margin:0;letter-spacing:.07em}
+.vendor-copy{font-size:12px;line-height:1.72;margin:0}
+.vendor-meta{display:flex;flex-wrap:wrap;gap:7px}.vendor-meta span{padding:6px 8px;border:1px solid var(--line);font:8px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.04em}
+.vendor-link{width:42px;height:42px;border:1px solid var(--ink);border-radius:50%;display:grid;place-items:center;text-decoration:none;transition:.2s}.vendor-link:hover{background:var(--ink);color:var(--paper);transform:rotate(45deg)}
+.empty-state{padding:90px;text-align:center;font:26px Italiana,serif;border-bottom:1px solid var(--line)}
+.checklist{padding:120px 8vw;background:var(--cream);display:grid;grid-template-columns:1fr 1.15fr;gap:10vw}
+.checklist h2{font:clamp(48px,6vw,82px)/.94 Italiana,serif;margin:0}
+.checklist ol{list-style:none;padding:0;margin:0}.checklist li{display:grid;grid-template-columns:45px 1fr;border-top:1px solid var(--line);padding:23px 0;gap:20px}.checklist li>span{font:9px 'DM Mono',monospace;opacity:.5}.checklist li p{font-size:12px;line-height:1.7;margin:0}.checklist li strong{font-weight:600}
+@media(max-width:900px){.inventory-hero{grid-template-columns:1fr;min-height:auto}.hero-note{max-width:400px}.buying-note{grid-template-columns:120px 1fr}.buying-note>div{display:none}.assortment-heading{grid-template-columns:1fr}.assortment-grid{grid-template-columns:repeat(2,1fr)}.vendor-row{grid-template-columns:45px 1fr 44px}.vendor-copy{grid-column:2/3}.vendor-meta{grid-column:2/3}.vendor-link{grid-column:3;grid-row:1}.checklist{grid-template-columns:1fr;gap:60px}}
+@media(max-width:600px){.inventory-nav{height:78px;grid-template-columns:1fr auto}.inventory-nav>p{display:none}.inventory-hero{padding:75px 6vw 60px;gap:45px}.buying-note{display:block;padding:45px 6vw}.buying-note>.eyebrow{margin-bottom:20px}.buying-note>p:nth-child(2){font-size:21px}.assortment,.inventory-other{padding:85px 5vw}.assortment-heading{display:block;margin:0 1vw 45px}.assortment-heading>p{margin-top:30px}.assortment-grid{grid-template-columns:1fr}.assortment-card{min-height:300px}.piece-image{margin-top:24px}.directory{padding:80px 5vw 90px}.directory-top{display:block}.source-search{margin-top:35px}.filter-bar{gap:18px}.filter-bar span{display:none}.vendor-row{grid-template-columns:32px 1fr 38px;gap:14px;padding:27px 3px}.vendor-name h3{font-size:25px}.vendor-copy{font-size:11px}.vendor-link{width:36px;height:36px}.checklist{padding:85px 7vw}.empty-state{padding:70px 20px}footer{grid-template-columns:1fr}}

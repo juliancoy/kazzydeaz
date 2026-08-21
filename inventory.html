@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Faith & Eve wholesale inventory sourcing directory.">
+  <title>Inventory Sources — Faith & Eve</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Italiana&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="inventory.css">
+</head>
+<body class="inventory-page">
+  <div class="announcement">Private buying desk <span>✦</span> Wholesale source directory</div>
+  <header class="inventory-nav">
+    <a class="wordmark" href="index.html">Faith <i>&</i> Eve</a>
+    <p>Inventory / Sources</p>
+    <a class="storefront-link" href="index.html">Back to storefront <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="inventory-hero">
+      <div class="hero-heading">
+        <p class="eyebrow">Buying notebook · 01</p>
+        <h1>Good clothes<br>start with <em>good sources.</em></h1>
+      </div>
+      <div class="hero-note">
+        <span class="hero-count">10</span>
+        <p>Wholesale partners to explore for our first bulk buys—from low-risk marketplace testing to custom production.</p>
+      </div>
+    </section>
+
+    <section class="buying-note" aria-label="Buying recommendation">
+      <p class="eyebrow">Where to begin</p>
+      <p><strong>Start with Faire, FashionGo, and Kiskissing.</strong> Together they offer the fastest read on price, silhouette, and boutique fit without committing the whole collection to one supplier.</p>
+      <div><span>Priority</span><b>01 / 10</b></div>
+    </section>
+
+    <section class="assortment">
+      <div class="assortment-heading">
+        <div>
+          <p class="eyebrow">Opening assortment</p>
+          <h2>Jewelry inventory.<br><em>Kept separate by category.</em></h2>
+        </div>
+        <p>This section holds the jewelry selection only. Everything outside jewelry is organized in the inventory other area below for cleaner merchandising and easier review.</p>
+      </div>
+      <div class="department-tabs" id="department-tabs" role="group" aria-label="Filter opening assortment">
+        <button class="active" data-department="all">Everything</button>
+        <button data-department="jewelry">Jewelry</button>
+      </div>
+      <div class="assortment-grid" id="assortment-grid"></div>
+    </section>
+
+    <section class="inventory-other">
+      <div class="assortment-heading">
+        <div>
+          <p class="eyebrow">Inventory other</p>
+          <h2>Non-jewelry inventory.<br><em>Consolidated by source and use.</em></h2>
+        </div>
+        <p>Hair accessories, beauty items, small gifts, and apparel essentials now live here as the inventory other structure, grouped for practical buying and reordering.</p>
+      </div>
+      <div class="assortment-grid" id="inventory-other-grid"></div>
+    </section>
+
+    <section class="directory">
+      <div class="directory-top">
+        <div>
+          <p class="eyebrow">Partner reference</p>
+          <h2>Wholesale directory</h2>
+        </div>
+        <label class="source-search">
+          <span aria-hidden="true">⌕</span>
+          <span class="sr-only">Search sources</span>
+          <input id="source-search" type="search" placeholder="Search sources or specialties…">
+        </label>
+      </div>
+      <div class="filter-bar" role="group" aria-label="Filter vendors">
+        <button class="active" data-filter="all">All sources</button>
+        <button data-filter="marketplace">Marketplaces</button>
+        <button data-filter="boutique">Boutique fit</button>
+        <button data-filter="low-minimum">Low minimum</button>
+        <button data-filter="manufacturing">Manufacturing</button>
+        <span id="source-count">10 sources</span>
+      </div>
+      <div id="source-list" class="vendor-list"></div>
+    </section>
+
+    <section class="checklist">
+      <div>
+        <p class="eyebrow">Before the first order</p>
+        <h2>Sample first.<br><em>Buy with care.</em></h2>
+      </div>
+      <ol>
+        <li><span>01</span><p><strong>Check the hand feel.</strong> Order samples for fabric weight, seams, shrinkage, pilling, and colorfastness.</p></li>
+        <li><span>02</span><p><strong>Confirm the size run.</strong> Verify true availability from ages 5–13 and ask for garment measurements.</p></li>
+        <li><span>03</span><p><strong>Price the landed unit.</strong> Include freight, duty, packaging, payment fees, and expected returns.</p></li>
+        <li><span>04</span><p><strong>Request compliance records.</strong> Review labeling, flammability, chemical, drawstring, and small-parts requirements.</p></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <a class="wordmark" href="index.html">Faith <i>&</i> Eve</a>
+    <p>Thoughtful sources for<br>the first collection.</p>
+    <div><a href="index.html">Storefront</a><a href="sources.html">Extended research</a></div>
+    <small>Internal buying reference · Terms and pricing subject to vendor confirmation</small>
+  </footer>
+  <script src="inventory.js"></script>
+</body>
+</html>
