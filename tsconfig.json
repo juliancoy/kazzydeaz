@@ -3,11 +3,12 @@
     "target": "ES2022",
     "module": "ESNext",
     "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
     "lib": ["ES2022", "WebWorker"],
     "types": ["@cloudflare/workers-types"],
     "strict": true,
     "skipLibCheck": true,
     "noEmit": true
   },
-  "include": ["src/**/*.ts", "pidp/src/**/*.ts"]
+  "include": ["src/**/*.ts", "../pidp/serverless/src/**/*.ts", "../pidp/serverless/worker-configuration.d.ts"]
 }

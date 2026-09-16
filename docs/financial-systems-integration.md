@@ -12,9 +12,9 @@ Cloudflare Worker as the Faith & Eve storefront.
 - Service identity: `/pidp/service/me`
 - Token introspection: `/pidp/service/token-info`
 
-Requests under `/pidp/*` are routed to the vendored PIDP Worker in `pidp/src`.
-The router strips the `/pidp` prefix before handing requests to PIDP, so PIDP's
-own endpoints remain unchanged internally.
+Requests under `/pidp/*` are routed to the sibling PIDP Worker in
+`../pidp/serverless/src`. The router strips the `/pidp` prefix before handing
+requests to PIDP, so PIDP's own endpoints remain unchanged internally.
 
 ## Cloudflare Bindings
 

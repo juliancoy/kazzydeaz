@@ -1,6 +1,7 @@
 node_modules/
 .wrangler/
 selenium-results/
+pidp/
 
 .env
 .env.*

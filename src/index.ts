@@ -1,4 +1,4 @@
-import pidp from "../pidp/src/index";
+import pidp from "../../pidp/serverless/src/index";
 
 export interface Env {
   ASSETS: Fetcher;
