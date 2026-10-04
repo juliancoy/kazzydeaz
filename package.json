@@ -7,6 +7,7 @@
     "docker:serve": "scripts/serve-docker.sh",
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
+    "deploy:pidp": "wrangler deploy --config pidp.wrangler.jsonc",
     "deploy:dry-run": "wrangler deploy --dry-run",
     "typecheck": "tsc --noEmit",
     "test": "npm --prefix ../pidp/serverless test",

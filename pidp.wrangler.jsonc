@@ -1,0 +1,46 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "faith-and-eve-pidp",
+  "main": "../pidp/serverless/src/index.ts",
+  "build": { "command": "npm --prefix ../pidp/serverless run build:metadata" },
+  "version_metadata": { "binding": "CF_VERSION_METADATA" },
+  "compatibility_date": "2026-09-16",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "observability": {
+    "enabled": true
+  },
+  "vars": {
+    "APP_NAME": "Faith & Eve Identity",
+    "ENV": "dev",
+    "ACCESS_TOKEN_EXPIRE_MINUTES": "525600",
+    "ALLOWED_ORIGINS": "https://faith-and-eve.jcloiacon.workers.dev",
+    "PORTAL_AUTH_ORIGINS": "https://faith-and-eve.jcloiacon.workers.dev",
+    "ADMIN_EMAILS": "",
+    "ADMIN_USER_IDS": "",
+    "PUBLIC_R2_BASE_URL": "",
+    "PUBLIC_BASE_URL": "https://faith-and-eve-pidp.jcloiacon.workers.dev",
+    "FRONTEND_REDIRECT_URL": "https://faith-and-eve.jcloiacon.workers.dev/",
+    "NATIVE_REDIRECT_SCHEMES": "org.arkavo.portal,codecollective",
+    "GOOGLE_REDIRECT_URI": "",
+    "GOOGLE_CALENDAR_REDIRECT_URI": "",
+    "MICROSOFT_REDIRECT_URI": "",
+    "MICROSOFT_CALENDAR_REDIRECT_URI": "",
+    "GITHUB_REDIRECT_URI": "",
+    "FINANCIAL_WEBHOOK_AUDIENCE": "financial-systems",
+    "FINANCIAL_INTEGRATION_MODE": "ready"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "faith-and-eve-pidp",
+      "database_id": "a981ce8c-dbf1-42e3-a11a-8e255a2d8243"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "AVATARS",
+      "bucket_name": "faith-and-eve-pidp-avatars"
+    }
+  ]
+}

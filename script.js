@@ -132,7 +132,7 @@ const menuButton=document.querySelector('#menu-button'),navDropdown=document.que
 function closeMenu(){navDropdown.classList.remove('open');menuButton.classList.remove('open');menuButton.setAttribute('aria-expanded','false');navDropdown.setAttribute('aria-hidden','true')}
 menuButton.addEventListener('click',()=>{const open=!navDropdown.classList.contains('open');navDropdown.classList.toggle('open',open);menuButton.classList.toggle('open',open);menuButton.setAttribute('aria-expanded',String(open));navDropdown.setAttribute('aria-hidden',String(!open))});
 navDropdown.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeMenu));
-document.querySelector('#login-button').addEventListener('click',()=>{closeMenu();loginModal.classList.add('open');loginModal.setAttribute('aria-hidden','false')});
+document.querySelectorAll('#login-button,#nav-login-link').forEach(link=>link.addEventListener('click',()=>{closeMenu();track('pidp.login_started',{url:link.href})}));
 function closeLogin(){loginModal.classList.remove('open');loginModal.setAttribute('aria-hidden','true')}
 document.querySelector('.login-close').addEventListener('click',closeLogin);document.querySelector('.modal-done').addEventListener('click',closeLogin);loginModal.addEventListener('click',e=>{if(e.target===loginModal)closeLogin()});
 const serviceDrawer=document.querySelector('#service-drawer');
